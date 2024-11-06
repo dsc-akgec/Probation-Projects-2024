@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Home from './home';
+import { NavLink } from 'react-router-dom';
 function LoginSignup() {
     const [isLogin, setIsLogin] = useState(true);
 
@@ -42,14 +43,13 @@ function LoginSignup() {
                                 
                         </>
                     )}
-                    <button type="submit" className="bg-blue-500 text-white py-2 rounded-full w-full">
+                    <button type="submit" className="bg-blue-500 text-white py-2 rounded-full w-full ">
                         {isLogin ? 'Login' : 'Sign Up'}
                     </button>
                 </form>
                 <button
                     onClick={toggleForm}
-                    className="text-blue-500 mt-4 underline"
-                >
+                    className="text-blue-500 mt-4 underline "   >
                     {isLogin ? 'Need an account? Sign up' : 'Already have an account? Login'}
                 </button>
             </div>

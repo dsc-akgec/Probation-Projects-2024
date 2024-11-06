@@ -3,26 +3,38 @@ import LoginSignup from './component/loginsignup'
 import Leftside from './component/leftside'
 import Middleside from './component/middleside'
 import Rightside from './component/rightside'
-// import Home from './component/home'
+import Home from './component/home'
+import Create from './component/createpost'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "./home",
-    element: ,
-  },
-]);
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><LoginSignup /></>
+    },
+    {
+      path: "/home",
+      element: <><Home/></>
+    },
+    {
+      path: "/create",
+      element: <><Create /></>
+    },
+    
+  ]);
 
 
   return (
-    <div className='w-full h-screen pr-4 m-0 flex '>
-      <LoginSignup />
+    <>
+      <RouterProvider router={router} />
+      {/* <div className='w-full h-screen pr-4 m-0 flex '>
+        <LoginSignup /> */}
       {/* <div className=' px-4  border-solid fixed max-1115:flex max-720:flex '>
         <Leftside />
       </div>
@@ -35,7 +47,8 @@ function App() {
       <div className='ml-[65%] '>
         <Rightside/>
       </div> */}
-    </div>
+      {/* </div> */}
+    </>
   )
 }
 

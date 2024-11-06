@@ -8,7 +8,8 @@ import MovieCreationSharpIcon from '@mui/icons-material/MovieCreationSharp';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddBoxIcon from '@mui/icons-material/AddBox';
-import MenuIcon from '@mui/icons-material/Menu';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Leftside = () => {
     return (
@@ -56,12 +57,12 @@ const Leftside = () => {
             </div>
             <div className='mt-16 mr-2' >
                 <div className='flex flex-row rounded mr-4 hover:bg-[#ededed] cursor-pointer h-9 items-center py-2 mb-3 px-1' >
-                    <img src={profile} alt='profile pic' className='h-8 w-8 rounded-full mr-6 ' ></img>
-                    <div className='font-semibold max-1115:hidden'>Threads</div>
+                    <SettingsIcon sx={{ fontSize: "30px", margin: "0 30px 0 0" }} />
+                    <div className='font-semibold max-1115:hidden'>Settings </div>
                 </div>
                 <div className='flex flex-row rounded mr-4 hover:bg-[#ededed] cursor-pointer h-9 items-center py-2 mb-3 px-1' >
-                    <MenuIcon sx={{ fontSize: "30px", margin: "0 30px 0 0" }} />
-                    <div className='font-semibold max-1115:hidden'>More</div>
+                    <LogoutIcon sx={{ fontSize: "30px", margin: "0 30px 0 0" }} />
+                    <div className='font-semibold max-1115:hidden'>Logout</div>
                 </div>
             </div>
         </div>

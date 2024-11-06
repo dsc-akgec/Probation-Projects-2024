@@ -8,6 +8,9 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import SendIcon from '@mui/icons-material/Send';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
+import ShareIcon from '@mui/icons-material/Share';
 
 
 
@@ -22,16 +25,17 @@ const Posts = () => {
                 </div>
                 <MoreHorizIcon sx={{ fontSize: '25px' }} className='cursor-pointer flex items-center' />
             </div>
-            <div id='postimg' className=''>
-                <img src={pic3} className='max-w-[100%]'></img>
+            <div id='postimg' className=' '>
+                <img src={pic3} className='max-w-[100%] h-[70%]'></img>
             </div>
             <div id='belowpost' className='flex flex-row gap-3 justify-between py-3'>
                 <div className='flex flex-row gap-3 '>
-                    <FavoriteBorderIcon sx={{ fontSize: '25px' }} className='cursor-pointer' />
+                    <ThumbUpOffAltIcon sx={{ fontSize: '25px' }} className='cursor-pointer' />
+                    <ThumbDownOffAltIcon sx={{ fontSize: '25px' }} className='cursor-pointer' />
                     <ChatBubbleOutlineIcon sx={{ fontSize: '25px' }} className='cursor-pointer' />
-                    <SendIcon sx={{ fontSize: '25px' }} className=' cursor-pointer' />
+
                 </div>
-                <BookmarkBorderIcon sx={{ fontSize: '25px' }} className=' cursor-pointer' />
+                <ShareIcon sx={{ fontSize: '25px' }} className=' cursor-pointer' />
             </div>
             <div id='likesection' className='flex flex-row items-center mb-1'>
                 <img src={pic2} className='w-[17px] h-[17px] rounded-full absolute'></img>
@@ -47,8 +51,11 @@ const Posts = () => {
             </div>
             <div className='text-[14px] text-[#999999] '>
                 View all 124 comments
-            </div><div className='text-[14px] text-[#999999] '>
-                Add a comment
+            </div>
+            <div className='text-[14px] text-[#999999] flex flex-row '>
+                {/* Add a comment */}
+                <input type='text' placeholder='Add a comment'className='border-none focus:border-none focus:outline-none w-full'></input>
+                <SendIcon sx={{ fontSize: '25px' }} className=' cursor-pointer hover:text-[#000000]' />
             </div>
         </div>
     )
