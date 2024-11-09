@@ -13,8 +13,8 @@ import Posts from './pages/post.jsx'
 
 const Middleside = () => {
     return (
-        <div className='my-0 mx-0  w-[85%] py-4 px-3 box-border flex flex-col justify-center items-center '>
-            <div id="storyblock" className='w-[83%] box-border flex flex-row justify-start overflow-x-auto gap-[10px] scrollbar-hide ' >
+        <div className='my-0 mx-0 h-[100%]  w-[85%] py-4 px-3 box-border flex flex-col justify-center items-center bg-[#080710] text-white'>
+            {/* <div id="storyblock" className='w-[83%] box-border flex flex-row justify-start overflow-x-auto gap-[10px] scrollbar-hide ' >
                 <div className=' flex flex-col justify-center items-center my-1 '>
                     <div><img src={profile} className=' min-w-[66px] min-h-[66px] w-[66px] h-[66px] rounded-full border border-solid p-[2px] cursor-pointer'></img></div>
                     <div><h3 className=' cursor-pointer'>ayush</h3> </div>
@@ -58,7 +58,7 @@ const Middleside = () => {
                 </div>
 
 
-            </div>
+            </div> */}
 
             <div id='post section' className='w-[65%] mt-3  box-border flex justify-start overflow-y-auto gap-[8px] scrollbar-hide flex-col items-center' >
                 {/* <div id='singlepost ' className='border-b-[2px] border-solid mb-2 pb-1' >
@@ -100,11 +100,11 @@ const Middleside = () => {
                     </div>
                 </div> */}
                 <Posts />
-                <Posts/>
-                <Posts/>
                 <Posts />
-                <Posts/>
-                <Posts/>
+                <Posts />
+                <Posts />
+                <Posts />
+                <Posts />
             </div>
 
 

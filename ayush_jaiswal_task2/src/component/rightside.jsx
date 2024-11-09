@@ -4,7 +4,7 @@ import profile from '../assets/profile.jpg'
 const Rightside = () => {
     return (
 
-        <div id='rightaccounts' className=' flex flex-col justify-between my-20 w-[100%] py-2 items-center max-1115:hidden '>
+        <div id='rightaccounts' className=' flex flex-col justify-between my-20 w-[100%] py-2 items-center max-1115:hidden bg-[#080710] text-white'>
 
             <div className=' flex flex-row gap-20 justify-between items-center'>
                 <div className='flex flex-row gap-3 items-center'>
@@ -16,12 +16,12 @@ const Rightside = () => {
                 </div>
 
 
-                <div className='text-[#0095F6]-600'>switch</div>
+                <div className='text-[#0095F6]-600 cursor-pointer'>switch</div>
             </div>
 
             <div className='flex flex-row text-[14px] w-[100%]  justify-between gap-20 mt-7 items-center'>
                 <div className='text-[#999999]'>Suggested for you</div>
-                <div className='font-semibold'>See All</div>
+                <div className='font-semibold  cursor-pointer'>See All</div>
             </div>
 
             <div className='flex flex-col my-3'>
@@ -33,7 +33,7 @@ const Rightside = () => {
                             <div className='text-[13px] weight font-medium text-[#999999] cursor-pointer' > Ayush Jaiswal</div>
                         </div>
                     </div>
-                    <div className='text-[#0095F6]-600'>
+                    <div className='text-[#0095F6]-600  cursor-pointer'>
                         Follow
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const Rightside = () => {
                             <div className='text-[13px] weight font-medium text-[#999999] cursor-pointer' > Ayush Jaiswal</div>
                         </div>
                     </div>
-                    <div className='text-[#0095F6]-600'>
+                    <div className='text-[#0095F6]-600 cursor-pointer'>
                         Follow
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Rightside = () => {
                             <div className='text-[13px] weight font-medium text-[#999999] cursor-pointer' > Ayush Jaiswal</div>
                         </div>
                     </div>
-                    <div className='text-[#0095F6]-600'>
+                    <div className='text-[#0095F6]-600  cursor-pointer'>
                         Follow
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Rightside = () => {
                             <div className='text-[13px] weight font-medium text-[#999999] cursor-pointer' > Ayush Jaiswal</div>
                         </div>
                     </div>
-                    <div className='text-[#0095F6]-600'>
+                    <div className='text-[#0095F6]-600  cursor-pointer'>
                         Follow
                     </div>
                 </div>

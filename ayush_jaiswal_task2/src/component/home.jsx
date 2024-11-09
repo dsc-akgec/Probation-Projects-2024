@@ -1,27 +1,27 @@
-import React,{useState } from 'react'
-import Leftside from '../component/leftside'
-import Middleside from '../component/middleside'
-import Rightside from '../component/rightside'
-import LoginSignup from '../component/loginsignup'
+import React from 'react';
+import Leftside from '../component/leftside';
+import Middleside from '../component/middleside';
+import Rightside from '../component/rightside';
+
 function Home() {
+  return (
+    <div className="w-full h-[100%] bg-[#080710] text-white flex fixed">
+      {/* Left Sidebar */}
+      <div className="fixed w-[20%] px-4 py-6 bg-[#1b1f2a] border-r border-white/10 hidden md:block">
+        <Leftside />
+      </div>
 
-    return (
-        <div className='w-full h-screen pr-4 m-0 flex '>
+      {/* Middle Section */}
+      <div className="flex-1 px-4 py-6 ml-auto bg-[#10141b] border-x border-white/10 overflow-auto">
+        <Middleside />
+      </div>
 
-            <div className=' px-4  border-solid fixed max-1115:flex max-720:flex '>
-                <Leftside />
-            </div>
-
-            <div className=' ml-[15%] absolute max-1115:justify-center max-1115:items-center max-1115:flex '>
-                <Middleside />
-
-            </div>
-
-            <div className='ml-[65%] '>
-                <Rightside />
-            </div>
-        </div>
-    )
+      {/* Right Sidebar */}
+      <div className="w-[25%] px-4 py-6 bg-[#1b1f2a] border-l border-white/10 hidden lg:block">
+        <Rightside />
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

@@ -16,7 +16,7 @@ import ShareIcon from '@mui/icons-material/Share';
 
 const Posts = () => {
     return (
-        <div id='singlepost ' className='border-b-[2px] border-solid mb-2 pb-1' >
+        <div id='singlepost ' className='border-solid-[#e8e8e8] border-[1px]  rounded p-1 bg-black mb-2 pb-1' >
             <div id='postinfo' className='flex flex-row justify-between pr-3 py-2'>
                 <div className='flex flex-row items-center gap-3 '>
                     <img src={profile} className='w-10 rounded-full p-[2px] border-2 border-blue-600 cursor-pointer '></img>
@@ -49,13 +49,13 @@ const Posts = () => {
                 </div>
                 <div className='text-[#999999]'>...more</div>
             </div>
-            <div className='text-[14px] text-[#999999] '>
+            <div className='text-[14px] text-[#999999] cursor-pointer '>
                 View all 124 comments
             </div>
             <div className='text-[14px] text-[#999999] flex flex-row '>
                 {/* Add a comment */}
-                <input type='text' placeholder='Add a comment'className='border-none focus:border-none focus:outline-none w-full'></input>
-                <SendIcon sx={{ fontSize: '25px' }} className=' cursor-pointer hover:text-[#000000]' />
+                <input type='text' placeholder='Add a comment'className='border-none bg-transparent text-[#ffffff] focus:border-none focus:outline-none w-full'></input>
+                <SendIcon sx={{ fontSize: '25px' }} className=' cursor-pointer hover:text-[#ffffff]' />
             </div>
         </div>
     )
